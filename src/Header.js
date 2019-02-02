@@ -7,7 +7,7 @@ export class Header extends Component {
   render() {
     return (
       <div className="App">
-        this is header
+        { this.props.children }
       </div>
     );
   }
