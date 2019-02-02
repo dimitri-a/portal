@@ -23,7 +23,7 @@ export class MasterLayout extends React.Component {
   }
 
   componentDidMount() {
-    debugger
+    //debugger
     this.portalRoot.appendChild(this.container);
   }
   componentWillUnmount() {
@@ -33,7 +33,7 @@ export class MasterLayout extends React.Component {
   render() {
     const { children } = this.props;
   
-    debugger
+    //debugger
 
     return (
       <BodyWrapper>

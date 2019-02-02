@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { User } from './User'
 
 
 const Container = styled.div`
@@ -9,16 +10,12 @@ const Container = styled.div`
   background-color: #fff;
 `;
 
-
 class PageHeader extends React.Component {
 
   render() {
     const {
       children,
     } = this.props;
-
-
-    debugger
 
     return (
       <Container>
@@ -29,13 +26,10 @@ class PageHeader extends React.Component {
             justify={['center', 'flex-start']}
             align="center"
           >
-                pageheader standard
           </Flex>
-
           <Flex align="center" justify="flex-end" flex="1 0 auto" px={[12, 18]}>
-            {children}
+            {children}<User />
           </Flex>
-          
         </Flex>
       </Container>
     );

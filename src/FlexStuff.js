@@ -3,7 +3,7 @@ import { Flex, Box } from 'grid-styled';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { PORTAL_CONTAINER as HEADER_CONTAINER } from './MasterLayout';
-
+import { User } from './User'
 
 
 const SearchWidgetWrapper = styled(Box).attrs({ px: 24, pt: 12 })`
@@ -31,15 +31,12 @@ const SearchContainer = styled(Box)`
 export class FlexStuff extends PureComponent {
 
   render() {
-    const meta ={count:10}
-
-    debugger
 
     const PortalContent = (
       <SearchWidgetWrapper>
         <SearchWidgetContent justify="flex-end" mx="auto">
           <SearchContainer>
-           <Box>portalcontent</Box>
+           <Box>FlexStuff header content</Box>
           </SearchContainer>
         </SearchWidgetContent>
       </SearchWidgetWrapper>
@@ -47,7 +44,7 @@ export class FlexStuff extends PureComponent {
 
     return [
       <Box p={24} flex="1 0 auto" column>
-              this is FlexStuff
+              this is FlexStuff basic content
       </Box>,
       ReactDOM.createPortal(PortalContent, HEADER_CONTAINER),
     ];
