@@ -17,17 +17,24 @@ const SearchWidgetContent = styled(Flex)`
   max-width: 1200px;
 `;
 
-const SearchContainer = styled(Box)`
-border: 4px solid green
-margin-right:0px
- 
+const SearchContainer = styled.div`
+border: 4px dotted purple
+margin-right:20px
+`;
+
+const StyledFlex = styled(Flex)`
+justify-content: flex-end;
+border: 4px brown solid;
+margin-right:100px;
 `;
 
 export class FlexStuff extends PureComponent {
   render() {
     const PortalContent = (
           <SearchContainer>
-           hello header from flexstuff
+            <StyledFlex>
+                Flexstuff header
+           </StyledFlex>
           </SearchContainer>
     );
 

@@ -7,11 +7,10 @@ import { User } from './User'
 
 const Container = styled.div`
   height: 65px;
-  background-color: #fff;
+  border: 4px dotted black
 `;
 
 const StyledFlex = styled(Flex)`
-
 border: 4px solid blue;
 flex-direction:row;
 justify-content:flex-end
@@ -27,9 +26,7 @@ class PageHeader extends React.Component {
     return (
       <Container>
         <StyledFlex >
-
           {children}<User />
-
         </StyledFlex>
       </Container>
     );
