@@ -36,7 +36,7 @@ export class MasterLayout extends React.Component {
     //debugger
 
     return (
-      <BodyWrapper>
+      <Box>
         <Body>
           <Header>
             <PageHeader>
@@ -50,7 +50,7 @@ export class MasterLayout extends React.Component {
           <Box>{children}</Box>
           
         </Body>
-      </BodyWrapper>
+      </Box>
     );
   }
 }

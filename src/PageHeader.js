@@ -11,8 +11,10 @@ const Container = styled.div`
 `;
 
 const StyledFlex = styled(Flex)`
-justify: flex-end;
-border: 1px solid blue;
+
+border: 4px solid blue;
+flex-direction:row;
+justify-content:flex-end
 `;
 
 class PageHeader extends React.Component {
@@ -24,11 +26,11 @@ class PageHeader extends React.Component {
 
     return (
       <Container>
-        <Flex direction="column">
-          <StyledFlex flex="1 0 auto" px={[12, 18]}>
-            {children}
-          </StyledFlex>
-        </Flex>
+        <StyledFlex >
+
+          {children}<User />
+
+        </StyledFlex>
       </Container>
     );
   }

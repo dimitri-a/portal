@@ -18,32 +18,21 @@ const SearchWidgetContent = styled(Flex)`
 `;
 
 const SearchContainer = styled(Box)`
-  @media (max-width: 858px) {
-    display: none;
-  }
-  @media (max-width: 1024px) {
-    input {
-      width: 110px;
-    }
-  }
+border: 4px solid green
+margin-right:0px
+ 
 `;
 
 export class FlexStuff extends PureComponent {
-
   render() {
-
     const PortalContent = (
-     
-  
           <SearchContainer>
-           hello header frfom flexstuff
+           hello header from flexstuff
           </SearchContainer>
-
-      
     );
 
     return [
-      <Box p={24} flex="1 0 auto" column>
+      <Box >
               this is FlexStuff basic content
       </Box>,
       ReactDOM.createPortal(PortalContent, HEADER_CONTAINER),
