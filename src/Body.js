@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flex } from 'grid-styled';
+import { Flex } from 'rebass';
 
 export const Body = styled(Flex)`
   min-height: 100vh;

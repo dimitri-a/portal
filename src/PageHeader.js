@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
+import { Flex, Box } from 'rebass';
 import { User } from './User'
 
 
 const Container = styled.div`
   height: 65px;
   background-color: #fff;
+`;
+
+const StyledFlex = styled(Flex)`
+justify: flex-end;
+border: 1px solid blue;
 `;
 
 class PageHeader extends React.Component {
@@ -19,17 +24,10 @@ class PageHeader extends React.Component {
 
     return (
       <Container>
-        <Flex direction="row">
-          <Flex
-            pl={[0, 18]}
-            width={[1, 'auto']}
-            justify={['center', 'flex-start']}
-            align="center"
-          >
-          </Flex>
-          <Flex align="center" justify="flex-end" flex="1 0 auto" px={[12, 18]}>
-            {children}<User />
-          </Flex>
+        <Flex direction="column">
+          <StyledFlex flex="1 0 auto" px={[12, 18]}>
+            {children}
+          </StyledFlex>
         </Flex>
       </Container>
     );

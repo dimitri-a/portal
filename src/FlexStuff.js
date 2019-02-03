@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Flex, Box } from 'grid-styled';
+import { Flex, Box } from 'rebass';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { PORTAL_CONTAINER as HEADER_CONTAINER } from './MasterLayout';
@@ -33,13 +33,13 @@ export class FlexStuff extends PureComponent {
   render() {
 
     const PortalContent = (
-      <SearchWidgetWrapper>
-        <SearchWidgetContent justify="flex-end" mx="auto">
+     
+  
           <SearchContainer>
-           <Box>FlexStuff header content</Box>
+           hello header frfom flexstuff
           </SearchContainer>
-        </SearchWidgetContent>
-      </SearchWidgetWrapper>
+
+      
     );
 
     return [
